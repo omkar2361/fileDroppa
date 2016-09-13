@@ -16,17 +16,19 @@ npm install --save file-droppa
 ```
 import FileDroppa from 'file-droppa'
 
-@Component({
-    selector: 'my-app',
-    directives: [FileDroppa],
-    template: `<fileDroppa [url]="'https://salty-taiga-80701.herokuapp.com/upload'">
-                   <!--<h1>-->
-                        <!--You can pass anything you want here-->
-                        <!--You can set you own file list here-->
-                   <!--</h1>-->
-               </fileDroppa>`
+\\ ADD FileDroppa module to your imports
+@NgModule({
+  imports: [
+    FileDroppa
+  ],
+  declarations: [
+    YourComponent
+  ],
+  bootstrap: [YourComponent]
 })
-export class AppComponent {}
+export class DefaultModule {
+
+}
 ```
 
 #### Configuration:
@@ -48,7 +50,6 @@ export class AppComponent {}
 ```
 @Component({
     selector: 'my-app',
-    directives: [FileDroppa],
     template: `<fileDroppa
                     [url]="'https://salty-taiga-80701.herokuapp.com/upload2'"
                     [autoUpload]="false"
