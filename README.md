@@ -51,7 +51,7 @@ export class DefaultModule {
 @Component({
     selector: 'my-app',
     template: `<fileDroppa
-                    [url]="'https://salty-taiga-80701.herokuapp.com/upload2'"
+                    [url]="'https://quiet-escarpment-61251.herokuapp.com/upload'"
                     [autoUpload]="false"
                     [showFilesList]="true"
                     [beforeRequest]="beforeRequest"
