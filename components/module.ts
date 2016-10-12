@@ -9,7 +9,7 @@ import {GetSizePipe} from "./Pipes/GetSize.pipe";
 
 @NgModule({
     imports: [
-      BrowserModule,
+      CommonModule,
     ],
     declarations: [
       GetSizePipe,
