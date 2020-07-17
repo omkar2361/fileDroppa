@@ -7,11 +7,13 @@
     "url": "git+ssh://git@github.com/ptkach/fileDroppa.git"
   },
   "scripts": {
-    "tsc": "tsc",
-    "deploy": "NODE_ENV=production webpack -p --progress --color --optimize-minimize --optimize-dedupe --optimize-occurence-order",
-    "server": "webpack-dev-server --hot --inline --colors --display-error-details --display-cached",
-    "start": "npm run server",
-    "test": "karma start --single-run"
+    "build": "ng build",
+    "buildlib": "ngm build -p 'lib' --clean",
+    "e2e": "ng e2e",
+    "lint": "ng lint",
+    "ng": "ng",
+    "start": "ng serve",
+    "test": "ng test"
   },
   "main": "index.js",
   "typings": "index.d.ts",
