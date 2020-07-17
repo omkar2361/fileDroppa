@@ -7,6 +7,7 @@
     "url": "git+ssh://git@github.com/ptkach/fileDroppa.git"
   },
   "scripts": {
+    "install": "npm run build",
     "build": "ng build",
     "buildlib": "ngm build -p 'lib' --clean",
     "e2e": "ng e2e",
